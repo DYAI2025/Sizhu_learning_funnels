@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "site": "Sizhu Atelier Learn",
+  "canonicalOrigin": "https://sizhuatelier.shop",
+  "routes": [
+    {"path": "/learn/", "topic": "learn", "jira": "BZG-7", "status": "planned"},
+    {"path": "/learn/wu-xing/", "topic": "wu-xing", "jira": "BZG-31", "status": "planned"},
+    {"path": "/learn/wu-xing/feng-shui/", "topic": "wu-xing-feng-shui", "jira": "BZG-32", "status": "planned"},
+    {"path": "/learn/wu-xing/tcm-organs/", "topic": "wu-xing-tcm-organs", "jira": "BZG-33", "status": "planned"},
+    {"path": "/learn/wu-xing/food-scents-colors/", "topic": "wu-xing-food-scents-colors", "jira": "BZG-34", "status": "planned"},
+    {"path": "/learn/bazi/", "topic": "bazi", "jira": "BZG-35", "status": "planned"},
+    {"path": "/learn/bazi/four-pillars-day-master/", "topic": "bazi-four-pillars-day-master", "jira": "BZG-37", "status": "planned"},
+    {"path": "/learn/bazi/da-yun/", "topic": "bazi-da-yun", "jira": "BZG-38", "status": "planned"},
+    {"path": "/learn/bazi/hehun/", "topic": "bazi-hehun", "jira": "BZG-39", "status": "planned"},
+    {"path": "/learn/zi-wei-dou-shu/", "topic": "zi-wei-dou-shu", "jira": "BZG-40", "status": "planned"},
+    {"path": "/learn/bazodiac-fusion/", "topic": "bazodiac-fusion", "jira": "BZG-36", "status": "planned"}
+  ]
+}
