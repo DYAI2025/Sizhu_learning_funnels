@@ -1,0 +1,34 @@
+.summary-list p { margin: 0; }
+
+.glossary-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .8rem; }
+.glossary-grid > div { padding: 1.1rem; border: 1px solid var(--line); background: #fff; }
+.glossary-grid dt { color: var(--midnight-violet); font-weight: 700; }
+.glossary-grid dt [lang="zh-Hans"] { margin-left: .25rem; }
+.glossary-grid dt em { display: block; color: var(--fern); font-size: .76rem; font-weight: 500; }
+.glossary-grid dd { margin: .5rem 0 0; color: var(--muted); font-size: .8rem; }
+
+.source-list { list-style: none; padding: 0; margin: 2rem 0; border-top: 1px solid var(--line); }
+.source-list li { display: grid; grid-template-columns: 150px 1fr; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.source-list a { color: var(--midnight-violet); font-weight: 700; text-underline-offset: 4px; }
+.source-list p { margin: .35rem 0 0; color: var(--muted); font-size: .78rem; }
+
+.related-section { padding: 7rem 0; background: #fff; border-top: 1px solid var(--line); }
+.related-section h2 { max-width: 15ch; }
+.related-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .8rem; margin-top: 2.5rem; }
+.related-card { min-height: 260px; display: flex; flex-direction: column; align-items: flex-start; padding: 1.3rem; border: 1px solid var(--line); background: var(--lime-cream); text-decoration: none; transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s ease; }
+.related-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--fern); }
+.related-index { color: var(--fern); font-size: .68rem; }
+.related-hanzi { margin: auto 0 1.2rem; font-size: 3.1rem; color: var(--midnight-violet); }
+.related-card strong { margin-bottom: .45rem; }
+.related-card > span:last-child { color: var(--muted); font-size: .75rem; }
+
+.commercial-section { padding: 6rem 0; background: var(--midnight-violet); color: #fff; }
+.commercial-inner { display: grid; grid-template-columns: 1fr .8fr; gap: 4rem; align-items: center; }
+.commercial-section h2, .commercial-section strong { color: #fff; }
+.commercial-section p { color: rgba(255,255,255,.75); }
+.commercial-actions { display: flex; flex-direction: column; align-items: stretch; gap: .75rem; }
+.text-link { color: var(--light-gold); text-align: center; font-size: .82rem; font-weight: 700; text-underline-offset: 4px; }
+
+.site-footer { padding: 4rem 0; background: #fff; border-top: 1px solid var(--line); }
+.footer-inner { display: grid; grid-template-columns: 1fr auto; gap: 3rem; }
+.footer-inner > div > p { max-width: 70ch; margin: 1.3rem 0 0; color: var(--muted); font-size: .75rem; }
