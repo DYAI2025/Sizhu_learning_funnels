@@ -1,8 +1,16 @@
+FROM python:3.13-alpine AS content-builder
+
+WORKDIR /app
+COPY src/ src/
+COPY scripts/ scripts/
+COPY public/ public/
+RUN python scripts/build_bazi.py
+
 FROM nginx:1.27-alpine
 
 ENV PORT=8080
 
-COPY public/ /usr/share/nginx/html/
+COPY --from=content-builder /app/public/ /usr/share/nginx/html/
 COPY nginx/default.conf.template /etc/nginx/templates/default.conf.template
 
 EXPOSE 8080
