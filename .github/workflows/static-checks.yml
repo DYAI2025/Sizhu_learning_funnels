@@ -15,8 +15,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
+      - name: Build BaZi learning page
+        run: python scripts/build_bazi.py
       - name: Validate Wu Xing page
         run: python tests/validate_wu_xing_page.py
+      - name: Validate BaZi page
+        run: python tests/validate_bazi_page.py
       - name: Build Docker image
         run: docker build -t sizhu-learning:test .
       - name: Run Docker image
@@ -33,6 +37,7 @@ jobs:
       - name: Verify public routes
         run: |
           curl --fail --silent http://127.0.0.1:8080/learn/wu-xing/ >/dev/null
+          curl --fail --silent http://127.0.0.1:8080/learn/bazi/ >/dev/null
           test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8080/)" = "302"
           test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8080/does-not-exist)" = "404"
       - name: Stop Docker container
